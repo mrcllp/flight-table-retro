@@ -1,14 +1,19 @@
-const port = 8000;
+const PORT = 5500;
+const axios = require("axios").default;
+const express = require("express");
+const app = express();
+const cors = require("cors");
+require("dotenv").config();
+app.use(cors());
 
 
-const axios = require("axios");
 
 const options = {
   method: 'GET',
-  url: 'https://madrid-barajas-airport-flights.p.rapidapi.com/MAD/departures',
+  url: 'https://toronto-pearson-airport.p.rapidapi.com/arrivals/carousel/9',
   headers: {
-    'X-RapidAPI-Key': 'df6be5e217mshd75b5d86b3f2e25p1be5b2jsn0b084e23a9d1',
-    'X-RapidAPI-Host': 'madrid-barajas-airport-flights.p.rapidapi.com'
+    'X-RapidAPI-Key': process.env.RAPID_API_KEY,
+    'X-RapidAPI-Host': 'toronto-pearson-airport.p.rapidapi.com'
   }
 };
 
