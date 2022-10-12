@@ -57,4 +57,43 @@ td {
     0 0 21px #fff, 0 0 42px rgba(0, 255, 170, 0.308),
     0 0 82px rgba(0, 255, 170, 0.801), 0 0 92px rgba(0, 255, 170, 0.342),
     0 0 102px #0fa, 0 0 151px rgba(0, 255, 170, 0.788);
+
+}
+
+.departures table {
+  text-align: left;
+}
+
+.flip {
+  text-align: center;
+}
+
+.departures table div {
+  display: flex;
+  text-align: center;
+  min-width: 20px;
+  height: 40px;
+  float: left;
+  justify-content: center;
+  align-items: center;
+}
+
+#time {
+  width: 200px;
+}
+
+#destination {
+  width: 400x;
+}
+
+#flight {
+  width: 300px;
+}
+
+#gate {
+  width: 135px;
+}
+
+#remarks {
+  width: 300px;
 }
